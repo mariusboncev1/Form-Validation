@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="title">Get started</div>
+            
+            <div id="account-login">
+                <p class="account">Already have an account?</p>
+                <a class="login" href="somethin">Log In</a>
+            </div>
+
+            <div id="socialButtons">
+                    <button id="google-btn"><i class="fa-brands fa-google"></i> &nbsp; sign up</button>
+                    <button id="facebook-btn"> <i class="fa-brands fa-facebook"></i> &nbsp; sign up</button>
+            </div>
+
+            <div class="or">Or</div>
+
+            <!-- /**
+                * !Username Input
+             **/ -->
+            <div>
+                <label for="username">Name</label>
+                <i class="fa-solid fa-user icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check succes-icon"></i>
+                <input type="text" name="username" id="username" placeholder="Maia Sandu">
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+                * !Email Input
+             **/ -->
+
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check succes-icon"></i>
+                <input type="text" name="email" id="email" placeholder="abc@gmail.com">
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+                * !Password Input
+             **/ -->
+
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock icon"></i>
+                <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-circle-check succes-icon"></i>
+                <input type="text" name="password" id="password" placeholder="Password here">
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+                * !Button 
+             **/-->
+             <button type="submit" id="submit-button">Submit</button>
+
+        </form>
+    </div>
+
+
+
+    <script src="/app.js"></script>
+    <script src="https://kit.fontawesome.com/e7a2b7951f.js" crossorigin="anonymous"></script>
+</body>
+</html>
