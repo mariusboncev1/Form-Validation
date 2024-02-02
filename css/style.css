@@ -3,14 +3,15 @@ body {
 }
 
 .container {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #form {
     background-color: #FFFF;
     margin: auto;
     max-width: 400px;
-    padding: 50px;
+    padding: 40px;
+    padding-top: 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 
@@ -21,7 +22,7 @@ body {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
 }
 
 #account-login {
@@ -33,14 +34,14 @@ body {
 .account {
     position: relative;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
 }
 
 .login {
     position: relative;
     bottom: 16px;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #f2796e;
@@ -49,10 +50,13 @@ body {
 }
 
 .or {
-    margin: 0;
+    margin-bottom: -40px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    top: -10px;
+    
 }
 
 form > div > input {
@@ -63,6 +67,7 @@ form > div > input {
     padding: 0 35px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 13px;
+    margin-bottom: 8px;
 }
 
 #username:focus {
@@ -71,14 +76,16 @@ form > div > input {
 
 
 form div label {
+    margin-top: 25px;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     display: block;
 }
 
 form div {
     margin-bottom: 15px;
     position: relative;
+    padding: -5px;
 }
 
 
@@ -99,17 +106,20 @@ form div .icon {
 }
 
 .succes-icon{
-    color: #A6CF98;
+    color: #28C37D;
+    font-size: 18px;
 }
 .failure-icon, .error {
+    font-size: 18px;
     color: #D04848;
 }
 
 .error {
-    font-size: 13px;
-    margin-top: 2px;
+    font-size: 12px;
     left: 5px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: -15px;
+    margin-top: -7px;
 }
 
 <!-- /**
@@ -133,6 +143,7 @@ form div .icon {
     border: 2px solid #c4c4c4;
     cursor: pointer;
     left: 0px;
+    padding-bottom: 4px;
 }
 
 #google-btn:hover {
@@ -145,7 +156,8 @@ form div .icon {
 
 .fa-google {
     color: #CF2D48;
-    font-size: 16px;
+    font-size: 22px;
+    margin-bottom: -7px;
 }
 
 #facebook-btn {

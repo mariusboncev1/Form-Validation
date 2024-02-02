@@ -8,19 +8,19 @@ let username = id('username'),
     form = id('form'),
     errorMsg = classes('error'),
     successIcon = classes('succes-icon'),
-    failureIcon = classes('failure-icon');
+    failureIcon = classes('failure-icon'),
+    submitBtn = id('submit-button');
 
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
+    form.addEventListener("submit", (submitBtn) => {
+        submitBtn.preventDefault();
 
-
-        engine(username, 0, "Ia șî scrie, nu te rușina!");
-        engine(email, 1, "Dă-ni datele tăli amu");
-        engine(password, 2, "Parola S'il vous plaît!");
+        engine(username, 0, "Username cannot be blank");
+        engine(email, 1, "Email cannot be blank");
+        engine(password, 2, "Password cannot be blank");
     })
 
 let engine = (id, serial, message) => {
-    if(id.value === "") {
+    if(id.value.trim() === "") {
         errorMsg[serial].innerHTML = message;
         failureIcon[serial].style.opacity = '1';
         successIcon[serial].style.opacity = '0';
@@ -31,3 +31,4 @@ let engine = (id, serial, message) => {
         successIcon[serial].style.opacity = '1';
     }
 }
+ 
