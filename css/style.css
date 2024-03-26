@@ -208,3 +208,25 @@ form div .icon {
 #submit-button:focus {
     border: 2px solid black;
 }
+
+/* ! QUEERIES */
+
+@media(max-width: 431px) {
+
+    #form {
+        width: 300px;
+    }
+
+    #google-btn, #facebook-btn {
+        width: 140px;
+    }
+
+    form > div > input {
+        width: 76%;
+    }
+
+    #submit-button {
+        width: 100%;
+    }
+
+}
